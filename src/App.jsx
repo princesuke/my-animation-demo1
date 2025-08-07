@@ -1,6 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router";
 import MainLayout from "./layout/MainLayout";
 import HomePage from "./pages/HomePage";
+import AnimeVsMotionPage from "./pages/AnimeVsMotionPage";
 
 export default function App() {
   return (
@@ -8,6 +9,7 @@ export default function App() {
       <Routes>
         <Route path="/" element={<MainLayout />}>
           <Route index element={<HomePage />} />
+          <Route path="anime-vs-motion" element={<AnimeVsMotionPage />} />
         </Route>
       </Routes>
     </BrowserRouter>

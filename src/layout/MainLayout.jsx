@@ -8,6 +8,10 @@ export default function Layout() {
           <NavLink to="/" className="hover:underline">
             Home
           </NavLink>{" "}
+          |
+          <NavLink to="/anime-vs-motion" className="hover:underline">
+            Anime vs Motion
+          </NavLink>{" "}
         </nav>
       </div>
       <main>
