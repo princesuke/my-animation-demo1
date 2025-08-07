@@ -22,7 +22,7 @@ export default function FadeSlideDemo() {
       return;
     }
 
-    const { chars } = text.split("p", {
+    const { chars } = text.split(".text", {
       chars: true,
     });
 
@@ -64,7 +64,8 @@ export default function FadeSlideDemo() {
       </div>
 
       <div className="mt-10">
-        <p>CodeCamp 20</p>
+        <p className="text">CodeCamp 20</p>
+        <p className="text">CodeCamp 21</p>
         <button
           onClick={() => handleAnimateText()}
           className="mt-3 bg-blue-700 p-3 text-white rounded-sm cursor-pointer"
