@@ -13,6 +13,9 @@ export default function FadeSlideDemo() {
       duration: 800,
       ease: "outCubic",
       delay: stagger(100),
+      onComplete: () => {
+        alert("Hey");
+      },
     });
   };
 
